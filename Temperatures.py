@@ -27,3 +27,24 @@ for i in input().split():
 # To debug: print("Debug messages...", file=sys.stderr)
 
 print(clo)
+
+
+#=========================================================
+#Other 1:
+input()
+T=[int(s) for s in input().split()]
+print(T and sorted(sorted(T,reverse=True),key=abs)[0] or 0)
+
+
+#=========================================================
+#Other 2:
+input()  # skip
+ln = input() or '0'
+
+temps = [int(s) for s in ln.split()]
+
+temps.sort(key = lambda x: (abs(x),-x))
+
+#print(temps, file=sys.stderr)
+
+print(temps[0])
